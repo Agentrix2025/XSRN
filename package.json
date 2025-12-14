@@ -1,0 +1,85 @@
+{
+  "name": "@xsrn/protocol",
+  "version": "1.0.0",
+  "description": "XSRN (X402 Service Routing Network) - Decentralized service routing and incentive protocol for x402 ecosystem",
+  "keywords": [
+    "x402",
+    "web3",
+    "payments",
+    "incentives",
+    "merkle",
+    "rewards",
+    "blockchain",
+    "bsc",
+    "ethereum"
+  ],
+  "author": "Agentrix Team <dev@agentrix.top>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Agentrix2025/XSRN.git"
+  },
+  "homepage": "https://xsrn.x402.org",
+  "bugs": {
+    "url": "https://github.com/Agentrix2025/XSRN/issues"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "build": "tsc -p tsconfig.json && npm run compile",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:contracts": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network bscTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network bscMainnet",
+    "verify": "hardhat verify --network bscTestnet",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "docs:build": "typedoc --out docs/api src/",
+    "docs:serve": "npx serve docs -p 3005",
+    "api": "ts-node src/api/cli.ts",
+    "api:dev": "ts-node-dev src/api/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.50.0",
+    "hardhat": "^2.19.0",
+    "prettier": "^3.1.0",
+    "supertest": "^6.3.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/merkle-tree": "^1.0.5",
+    "cors": "^2.8.5",
+    "ethers": "^6.9.0",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0"
+  },
+  "files": [
+    "dist/",
+    "contracts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
