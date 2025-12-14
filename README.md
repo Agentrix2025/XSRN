@@ -42,13 +42,13 @@ XSRN (X402 Service Routing Network) is the incentive and quality assurance layer
         │                         │
         ▼                         ▼
 ┌───────────────────┐     ┌───────────────────┐
-│   XsrnTreasury    │     │    Commission     │
+│   XsrnTreasury    │     │Merchant/Commission│
 │  (Protocol Fees)  │     │ (Merchant Split)  │
 │                   │     │                   │
 │ • 40% Watcher     │     │ • Merchant        │
 │ • 30% Operator    │     │ • Agent/Referrer  │
-│ • 20% Public Good │     │ • Platform        │
-│ • 10% Reserve     │     │ • Off-ramp        │
+│ • 20% Public Good │     │ • Agent/execution │
+│ • 10% Reserve     │     │ • platform        │
 └───────────────────┘     └───────────────────┘
 ```
 
@@ -284,17 +284,13 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 - **Website**: [https://xsrn.x402.org](https://xsrn.x402.org)
 - **Documentation**: [https://docs.xsrn.x402.org](https://docs.xsrn.x402.org)
 - **x402 Protocol**: [https://x402.org](https://x402.org)
-- **Agentrix**: [https://agentrix.top](https://agentrix.top)
 - **Twitter**: [@x402protocol](https://twitter.com/x402protocol)
 - **Discord**: [Join our Discord](https://discord.gg/x402)
 
 ## 📧 Contact
 
-- **Email**: dev@agentrix.top
+- **Email**: Jacky2025@agentrix.top
 - **GitHub Issues**: [Report a bug](https://github.com/Agentrix2025/XSRN/issues)
 
 ---
 
-<p align="center">
-  Built with ❤️ by the <a href="https://agentrix.top">Agentrix</a> team
-</p>
